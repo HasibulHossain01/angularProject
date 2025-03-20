@@ -1,0 +1,19 @@
+<div class="main">
+  <h2 id="heading">Student Name and Registration*</h2>
+  <table border="1">
+    <thead>
+      <tr>
+        <th>Student ID</th>
+        <th>Student Name</th>
+        <th>Ranking</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let student of students">
+        <td>{{ student.id }}</td>
+        <td>{{ student.name }}</td>
+        <td>{{ student.registration }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

@@ -1,0 +1,55 @@
+/* Center the form on the page */
+.container{
+  padding-top: 60px;
+}
+.add-university-form {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the heading */
+h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Style the input field */
+.input-field {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.input-field:focus {
+  outline: none;
+  border-color: #3f51b5; /* Blue focus color */
+  box-shadow: 0 0 5px rgba(63, 81, 181, 0.5);
+}
+
+/* Style the button */
+.add-button {
+  width: 100%;
+  padding: 12px;
+  background-color: #3f51b5; /* Primary blue color */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.add-button:hover {
+  background-color: #303f9f; /* Darker blue on hover */
+}
+
+.add-button:focus {
+  outline: none;
+}

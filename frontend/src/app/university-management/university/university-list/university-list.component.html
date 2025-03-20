@@ -1,0 +1,19 @@
+<div class="main">
+  <h2 id="heading">University Name and Ranking*</h2>
+  <table border="1">
+    <thead>
+      <tr>
+        <th>University ID</th>
+        <th>University Name</th>
+        <th>Ranking</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let university of universities">
+        <td>{{ university.id }}</td>
+        <td>{{ university.name }}</td>
+        <td>{{ university.ranking }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

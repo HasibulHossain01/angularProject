@@ -1,0 +1,12 @@
+<div class="container">
+  <h2>Add University</h2>
+  <form (ngSubmit)="onSubmit()" class="add-university-form">
+    <input type="text" [(ngModel)]="universityName" name="name" placeholder="University Name" class="input-field" required>
+    <input type="number" [(ngModel)]="universityRanking" name="ranking" placeholder="University Ranking" class="input-field" required>
+    <button type="submit" class="add-button">Add</button>
+  </form>
+
+  <!-- Display success or error message -->
+  <div *ngIf="successMessage" class="success-message">{{ successMessage }}</div>
+  <div *ngIf="errorMessage" class="error-message">{{ errorMessage }}</div>
+</div>

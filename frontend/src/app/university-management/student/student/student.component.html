@@ -1,0 +1,34 @@
+<div class="container">
+  <div class="header">
+    <div class="header-icon-div">
+      <button (click)="navigateToTarget()">
+        <mat-icon class="icon">arrow_backward</mat-icon>
+      </button></div>
+    <div class="header-text-div">    <h2>Student Management</h2>
+    </div>
+
+
+  </div>
+
+
+  <!-- Navigation -->
+
+  <mat-button-toggle-group #group="matButtonToggleGroup">
+    <mat-button-toggle value="left" (change)="showAddStudent()">
+      Add student
+    </mat-button-toggle>
+    <mat-button-toggle value="center" (change)="showStudentList()">
+      Student List
+    </mat-button-toggle>
+
+    <mat-button-toggle (change)="showBoth()">Both</mat-button-toggle>
+  </mat-button-toggle-group>
+
+  <!-- Content Section -->
+  <div class="content">
+    <app-student-list *ngIf="showList"></app-student-list>
+    <app-add-student *ngIf="showAdd"></app-add-student>
+  </div>
+
+
+</div>
